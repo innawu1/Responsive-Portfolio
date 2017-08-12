@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Contact Page</title>
+	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+</head>
+
+<body>
+<header id ="master">
+	<div class = "container">
+		<a href="index.html" id= "headerLogo">Ikechi Nnawuba</a>
+			<nav> 
+				<a href="index.html">About</a>
+					<a href="portfolio.html">Portfolio</a>
+						<a href="contact.html">Contact</a>
+			</nav>
+		</div> 
+</header>
+
+<div id="main-container" class="container">
+    <section class="main-section">
+		<h1>Contact</h1>
+			<form id="contact-form" action="mailto:innawuba@gmail.com" method="post" enctype="text/plain">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="someone@email.com" required="required">
+					</li>
+					<li>
+					<label for="message">Message</label>
+					<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+  				<input type="submit">
+			</form>
+	</section>
+	<section class="sidebar"> 			
+		<h2> Connect with Me</h2>
+			<a href="https://github.com/innawu1" target="_blank"><img src= "Assets/images/if_github_273178.png" class="social" alt="Github"></a>
+			<a href="https://www.linkedin.com/in/ikechi-nnawuba-53753415" target="_blank"><img src="Assets/images/if_linkedin_272550.png" class="social" alt="LinkedIn"></a>
+			<a href="https://stackoverflow.com/users/8354057/ike-nnawuba" target="_blank"><img src="Assets/images/if_stackoverflow_273179.png" class="social" alt="Stack Overflow"></a>
+	</section>
+</div>
+<footer>
+<div class = "container">
+Copyright &copy; 2017 Ikechi Nnawuba
+</div>
+</footer>
+</body>
+</html>

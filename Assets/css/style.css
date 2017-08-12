@@ -258,31 +258,39 @@ input[type=submit] {
 
 @media screen and (max-width: 640px){
 
-.container{
-	max-width: 100%;
-}
 
-#headerLogo{
-	width: 100%;	
+.container {
+	max-width: 640px;
+	
 }
-
-#master{
+#master {
 	position: static;
+	overflow: hidden;
+}
+
+ #headerLogo {
+	margin-left: 0;
+	width: 100%;
 }
 
 nav {
 	padding-bottom: 20px;
-	
 }
 
 nav a {
+	float: left;
 	padding-left: 70px;
-	padding-right: 30px;
+	padding-right: 70px;
+	margin: 0;
 }
 
 #main-container{
-	padding-top: 0;
-	width: 90%;
+padding-top: 0;
+}
+
+.main-section{
+ margin-left: 35px;
+ width: 90%;
 }
 
 .profile-pic{
@@ -291,7 +299,8 @@ nav a {
  }
  .sidebar{
  	float: left;
- 	max-width: 640px;
+ 	margin-left: 35px;
+ 	max-width: 548px;
  }
  .gallery{
  	margin-left: 110px;
@@ -305,25 +314,57 @@ nav a {
  }
 } 
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
 .container{
-	max-width:768px;
+	max-width: 768px;
 }
+
 #headerLogo{
-	margin-left: 20px;
+	margin-left: 25px;
 	}
 
 nav{
-	margin-right: 20px;
+	margin-right: 25px;
 }
-#main-container{
-	padding-top: 120px;
-	padding-left: 50px;
+
+.main-section{
+	margin-left: 25px;
+	max-width: 690px;
 }
 .sidebar{
- 	float: left;
- 	max-width: 768px;
+ float: left;
+ margin-left: 25px;
+ max-width: 690px;	
 }
-@media(max-width: 980px){
-
+.gallery img{
+ 	border: 1px solid #777;
+ }
+ .gallery:hover{
+ 	border: none;
+ }
+ .gallery:nth-child(even) {
+  margin-right: 76px;
+}
+}
+@media screen and (max-width: 980px) and (min-width: 769px){
+.container{
+	max-width: 980px;
+}
+#headerLogo{
+	margin-left: 100px;
+	}
+nav{
+	margin-right: 100px;
+	}
+.main-section{
+margin-left: 100px;
+max-width: 445px;
+}
+.profile-pic{
+ 	float: none;
+ 	width: 100%;
+ }
+.sidebar{
+ margin-right: 90px;
 }
